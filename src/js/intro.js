@@ -47,7 +47,7 @@ function introTxt() {
 // 페이지 이동 함수
 function mainMove() {
   // git 전용
-  // location.href ="../cknb_draft_global/src/html/main.html";
+  location.href ="../cknb_draft_global/src/html/main.html";
   // local 전용
-  location.href = "../src/html/main.html";
+  // location.href = "../src/html/main.html";
 }
