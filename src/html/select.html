@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CK&B</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
+    <script src="../js/jquery.fullpage.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body class="animate__animated animate__fadeIn">
+    <header>
+        <div class="wrap">
+            <img src="../imgs/hiddentag-main-logo.svg">
+            <button class="cancel-btn">X</button>
+        </div>
+    </header>
+    <section class="select-section">
+        <div class="inner">
+            <div class="head-box flex-col">
+                <div class="tit-box flex-row">
+                    <i class="head-img"></i><h3 class="head-tit">선호카테고리</h3>
+                </div>
+                <h4 class="tit">어서오세요! 선호하는 카테고리를 고르시면<br>
+                    알맞은 데이터를 추천해 드려요!
+                </h4>
+                <div class="txt-box flex-row">
+                    <p class="txt">많이 고를수록 추천이 정확해져요!</p><button class="btn reset-btn">초기화</button>
+                </div>
+            </div>
+        </div>
+        <div class="inner pd-bt-20">
+            <div class="card mt-20 flex-col">
+                <ul class="flex-row">
+                    <li class="list flex-col">
+                        <i class="img-beauty"></i>
+                        <input type="checkbox" class="check-box beauty" id="check1" data-value="1">
+                        <label class="label-checkbox" for="check1"></label>
+                        <p class="txt">뷰티 · 화장품</p>
+                    </li>
+                    <li class="list flex-col">
+                        <i class="img-fashion"></i>
+                        <input type="checkbox" class="check-box fashion" id="check2" data-value="2">
+                        <label class="label-checkbox" for="check2"></label>
+                        <p class="txt">패션</p>
+                    </li>
+                    <li class="list flex-col">
+                        <i class="img-child"></i>
+                        <input type="checkbox" class="check-box child" id="check3" data-value="4">
+                        <label class="label-checkbox" for="check3"></label>
+                        <p class="txt">아동</p>
+                    </li>
+                </ul>
+                <ul class="flex-row">
+                    <li class="list flex-col">
+                        <i class="img-food"></i>
+                        <input type="checkbox" class="check-box food" id="check4" data-value="8">
+                        <label class="label-checkbox" for="check4"></label>
+                        <p class="txt">식품</p>
+                    </li>
+                    <li class="list flex-col">
+                        <i class="img-living"></i>
+                        <input type="checkbox" class="check-box living" id="check5" data-value="16">
+                        <label class="label-checkbox" for="check5"></label>
+                        <p class="txt">리빙</p>
+                    </li>
+                    <li class="list flex-col">
+                        <i class="img-appliances"></i>
+                        <input type="checkbox" class="check-box appliances" id="check6" data-value="32">
+                        <label class="label-checkbox" for="check6"></label>
+                        <p class="txt">가전제품</p>
+                    </li>
+                </ul>
+                <ul class="flex-row">
+                    <li class="list flex-col">
+                        <i class="img-goods"></i>
+                        <input type="checkbox" class="check-box goods" id="check7" data-value="64">
+                        <label class="label-checkbox" for="check7"></label>
+                        <p class="txt">생활용품</p>
+                    </li>
+                    <li class="list flex-col">
+                        <i class="img-health"></i>
+                        <input type="checkbox" class="check-box health" id="check8" data-value="128">
+                        <label class="label-checkbox" for="check8"></label>
+                        <p class="txt">건강</p>
+                    </li>
+                    <li class="list flex-col">
+                        <i class="img-etc"></i>
+                        <input type="checkbox" class="check-box etc" id="check9" data-value="256">
+                        <label class="label-checkbox" for="check9"></label>
+                        <p class="txt">기타</p>
+                    </li>
+                </ul>
+                <button class="btn btn-complete">완료</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <a class="link" href="../html/main.html">
+                <img src="../imgs/ic-home.svg">
+            </a>
+            <a href="../html/sub.html" class="link">
+                <img src="../imgs/ic-brand.svg">
+            </a>
+            <div class="scan-wrap">
+                <img src="../imgs/ic-scan.svg">
+            </div>
+            <a href="../html/mypage.html" class="link">
+                <img src="../imgs/ic-mypage.svg">
+            </a>
+            <img src="../imgs/ic-community.svg">
+        </nav>
+    </footer>
+</body>
+</html>

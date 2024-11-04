@@ -1,0 +1,187 @@
+.select-section {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-bottom: 12rem;
+    gap : 0;
+    .inner {
+        width: 100%;
+        padding : 0 3rem;
+        .head-box {
+            display : flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap : 0.5rem;
+            width: 100%;
+            .tit-box {
+                width: 100%;
+                display : flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                margin-bottom : 1rem;
+                gap : 0.2rem;
+                .head-img {
+                    display: inline-block;
+                    background: url('../img/ic-category.png') no-repeat center / cover;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 20%;
+                }
+                .head-tit {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+            .tit {
+                width: 100%;
+                text-align: left;
+                font-size: 1.6rem;
+            }
+            .txt-box {
+                display : flex;
+                align-items: center;
+                width: 100%;
+                justify-content: flex-start;
+                .txt {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color : rgb(106, 106, 211);
+                    margin-right : auto;
+                }
+                .reset-btn {
+                    cursor: pointer;
+                    font-size: 1.1rem;
+                    padding : 0.25rem 1rem;
+                    background-color: rgb(202, 197, 197);
+                }
+            }
+            .detaitxt-box {
+                width: 100%;
+                justify-content: flex-start;
+                display : none;
+                .sub-txt {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color : red;
+                    margin-right : auto;
+                }
+            }
+        }
+        .card {
+            display : flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding : 2rem;
+            gap : 2rem;
+            ul {
+                display : flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                .list {
+                    cursor: pointer;
+                    transition: all 0.2s;
+                    flex: 0 0 33.33%;
+                    padding : 0.5rem;
+                    border-top : 0;
+                    position: relative;
+                    &:active {
+                        transform: scale(0.97) translateY(-0.1rem);
+                        filter: brightness(0.90);
+                    }
+                    [class*='img-'] {
+                        display: inline-block;
+                        width: 100%;
+                        padding-bottom : 100%;
+                        border-radius: 1rem;
+                        box-shadow: 3px -3px 6px 0 rgba(37, 83, 185, 0.1);
+                        &.img-beauty {
+                            background: url('../imgs/img-beauty.jpg') no-repeat center / cover;
+                        }
+                        &.img-fashion {
+                            background: url('../imgs/img-fashion.jpg') no-repeat center / cover;
+                        }
+                        &.img-child {
+                            background: url('../imgs/img-child.jpg') no-repeat center / cover;
+                        }
+                        &.img-food {
+                            background: url('../imgs/img-food.jpg') no-repeat center / cover;
+                        }
+                        &.img-living {
+                            background: url('../imgs/img-living.jpg') no-repeat center / cover;
+                        }
+                        &.img-appliances {
+                            background: url('../imgs/img-appliances.jpg') no-repeat center / cover;
+                        }
+                        &.img-goods {
+                            background: url('../imgs/img-goods.jpg') no-repeat center / cover;
+                        }
+                        &.img-health {
+                            background: url('../imgs/img-health.jpg') no-repeat center / cover;
+                        }
+                        &.img-etc {
+                            background: url('../imgs/img-etc.jpg') no-repeat center / cover;
+                        }
+                    }
+                    .check-box {
+                        display : none;
+                        &:checked+label {
+                            display : block;
+                            background: url('../imgs/ic-check-fill.svg') no-repeat center/cover;
+                            width: 5.5vw;
+                            height: 5.5vw;
+                        }
+                    }
+                    label {
+                        display : block;
+                        background: url('../imgs/ic-check-empty.svg') no-repeat center/cover;
+                        width: 5vw;
+                        height: 5vw;
+                        position: absolute;
+                        top : 1rem;
+                        right : 1rem;
+                    }
+                    .txt {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .btn-complete {
+                cursor: pointer;
+                width: 100%;
+                background-color: rgb(106, 106, 211);
+                color : white;
+                border: none;
+                margin-right: 0;
+                font-size: 1.2rem;
+                font-weight: 600;
+                border-radius: 5rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .preferredCategory  {
+        .inner {
+            .card {
+                ul {
+                    .list {
+                        .txt {
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

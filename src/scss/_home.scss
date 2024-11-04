@@ -1,0 +1,192 @@
+.home {
+  .s1 {
+    padding: 4rem 3rem;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+    .swiper {
+      .swiper-slide {
+        padding: 1rem;
+        img {
+          height: 100%;
+          box-shadow: 1rem -1rem 1rem 0rem #e3e0e0;
+        }
+      }
+    }
+    // 1안 [s]
+    .left-circle {
+        position: absolute;
+        top : 0;
+        left: -1rem;
+        width: 2.5rem;
+        height: 100%;
+        background-color: #bdd2f6;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+            left : 0;
+        }
+    }
+
+    .right-circle {
+        position: absolute;
+        top : 0;
+        right: -1rem;
+        width: 2.5rem;
+        height: 100%;
+        background-color: #bdd2f6;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+            right: 0;
+        }
+    }
+    // 1안 [e]
+    // 2안 [s]
+    // .left-ct-wrap {
+    //     display : flex;
+    //     justify-content: center;
+    //     align-items: flex-start;
+    //     flex-direction: column;
+    //     position: absolute;
+    //     top : 0;
+    //     left : -1rem;
+    //     width: 6rem;
+    //     height: 100%;
+    //     cursor: pointer;
+    //     transition: all 0.5s;
+    //     &:hover {
+    //         left : 0;
+    //     }
+    //     .top-ct {
+    //         width: 6rem;
+    //         height: 65%;
+    //         background-color: #8daee7;
+    //         border-top-right-radius: 2%;
+    //         border-bottom-right-radius: 50%;
+    //         position: relative;
+    //         &::before {
+    //             content: '';
+    //             position: absolute;
+    //             bottom : -6px;
+    //             left : -10px;
+    //             width: 4rem;
+    //             height: 2rem;
+    //             border-radius: 1rem;
+    //             background-color: #507ac3;
+    //         }
+    //     }
+    //     .bottom-ct {
+    //         width: 2.7rem;
+    //         height: 40%;
+    //         background-color: #8daee7;
+    //         border-top-right-radius: 10%;
+    //     }
+    // }
+    // .right-ct-wrap {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: flex-start;
+    //     flex-direction: column;
+    //     position: absolute;
+    //     top: 0;
+    //     right: -1rem; // left를 right로 변경
+    //     width: 6rem;
+    //     height: 100%;
+    //     cursor: pointer;
+    //     transition: all 0.5s;
+    //     &:hover {
+    //         right: 0; // left를 right로 변경
+    //     }
+    //     .top-ct {
+    //         width: 6rem;
+    //         height: 65%;
+    //         background-color: #8daee7;
+    //         border-top-left-radius: 2%; // right에 맞게 변경
+    //         border-bottom-left-radius: 50%; // right에 맞게 변경
+    //         position: relative;
+    //         &::before {
+    //             content: '';
+    //             position: absolute;
+    //             bottom: -6px;
+    //             right: -10px; // left를 right로 변경
+    //             width: 4rem;
+    //             height: 2rem;
+    //             border-radius: 1rem;
+    //             background-color: #507ac3;
+    //         }
+    //     }
+    //     .bottom-ct {
+    //         width: 2.7rem;
+    //         height: 40%;
+    //         background-color: #8daee7;
+    //         border-top-left-radius: 10%; // right에 맞게 변경
+    //         margin-left: 56%;
+    //     }
+    // }    
+    // 2안 [e]
+  }
+  .left-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #a2b1ca;
+    transform: translateX(-100%);
+    transition: all 1s ease;
+    z-index: 15;
+    // padding: 4rem 3rem 18rem 3rem;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    &.active {
+        transform: translateX(0);
+    }
+    ul {
+      li {
+        img {
+          width: 70%;
+          height: 50%;
+        }
+      }
+    }
+  }
+  .right-section {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #a2b1ca;
+    transform: translateX(100%);
+    transition: all 1s ease;
+    z-index: 15;
+    // padding: 4rem 3rem 18rem 3rem;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    &.active {
+        transform: translateX(0);
+    }
+    ul {
+      li {
+        img {
+          width: 70%;
+          height: 50%;
+        }
+      }
+    }
+  }
+}
