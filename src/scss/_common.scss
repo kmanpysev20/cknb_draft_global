@@ -89,6 +89,9 @@ html {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   overflow-x : hidden;
   overflow-y: auto;
+  &.scroll-none {
+    overflow: hidden;
+  }
 }
 
 * {
@@ -155,12 +158,17 @@ article {
   z-index: 10;
   &:nth-of-type(2) {
     img {
-      width: 98%;
+      width: 70%;
     }
   }
   &:nth-of-type(3) {
     img {
-      width: 98%;
+      width: 70%;
+    }
+  }
+  &:nth-of-type(4) {
+    img {
+      width: 70%;
     }
   }
 }
@@ -244,7 +252,10 @@ header {
     align-items: center;
     height: 100%;
     position: relative;
-    padding : 0 3rem 0 1rem;
+    padding : 0 3rem 0 3rem;
+    &.main-wrap {
+      padding : 0 4rem 0 1rem;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -253,7 +264,7 @@ header {
       cursor: pointer;
       border-radius: 0;
       box-shadow: unset;
-      &.filter { 
+      &.ic-menu { 
         width: 3rem;
       }
       &:hover {
@@ -328,5 +339,84 @@ footer {
         }
       }
     }
+  }
+}
+
+// talk btn
+.talk-btn {
+  position: fixed;
+  bottom : 12rem;
+  right : 1.5rem;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  z-index: 10;
+  img {
+    border-radius: 0 !important;
+    box-shadow: unset !important;
+  }
+}
+
+// 톡 버튼 
+.talk-section {
+  display : flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #a2b1ca;
+  transform: translateY(100%);
+  transition: all 1s ease;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  padding : 6rem 3rem 10rem 3rem;
+  gap : 8rem;
+  &.active {
+    transform: translateY(0);
+  }
+  img {
+    width: 100%;
+    display : flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+// 메뉴 
+.menu-left {
+  display : flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #a2b1ca;
+  transform: translateY(-100%);
+  transition: all 1s ease;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  padding : 6rem 3rem 10rem 3rem;
+  gap : 8rem;
+  &.active {
+    transform: translateY(0);
+  }
+  a {
+    width: 100%;
+    display : flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
   }
 }

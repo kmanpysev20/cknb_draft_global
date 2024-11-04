@@ -1,12 +1,7 @@
 .intro {
     position: relative;
     height: 100vh;
-    video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter : brightness(0.9);
-    }
+    background-color:#8fb7b7;
     .wrap {
         position: absolute;
         top : 0;
@@ -22,6 +17,9 @@
         align-items: center;
         flex-direction: column;
         gap : 2rem;
+        img {
+            box-shadow: unset;
+        }
         .img-tit {
             box-shadow:  unset;
         }
@@ -43,14 +41,12 @@
             background: white;
             animation-iteration-count: infinite;
             &.ani1 {
-                left : 0;
                 top : 15%;
                 animation-duration: 2s;
                 animation-name: loading1;
                 animation-iteration-count: infinite;
             }
             &.ani2 {
-                right : 0;
                 bottom : 15%;
                 animation-duration: 2s;
                 animation-name: loading2;
