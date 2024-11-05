@@ -6,13 +6,37 @@
     z-index: 5;
    .top-wrap {
     width: 100%;
+    height: 25rem;
     display : flex;
     justify-content: center;
     align-items: center;
-    .swiper {
+    flex-direction: row-reverse;
+    .mainSwiper1 {
+      height: 100%;
       .swiper-slide {
         padding: 1rem;
+        display : flex;
+        justify-content: center;
+        align-items: center;
         img {
+          width: 100%;
+          height: 100%;
+          box-shadow: 1rem -1rem 1rem 0rem #e3e0e0;
+          &:hover {
+            filter : brightness(1);
+          }
+        }
+      }
+    }
+    .mainSwiper2 {
+      height: 100%;
+      .swiper-slide {
+        padding: 1rem;
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
           height: 100%;
           box-shadow: 1rem -1rem 1rem 0rem #e3e0e0;
           &:hover {
