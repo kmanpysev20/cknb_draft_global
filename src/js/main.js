@@ -11,10 +11,10 @@ function init() {
 function mainSwiper1() {
     const swiper = new Swiper(".mainSwiper1", {
         slidesPerView: 1,
-        autoplay: {
-            delay: 0, // 딜레이 없이 자동 재생
-            disableOnInteraction: false
-        },
+        // autoplay: {
+        //     delay: 0, // 딜레이 없이 자동 재생
+        //     disableOnInteraction: false
+        // },
         speed: 2000, // 슬라이드 전환 속도 (2초)
         loop: true, // 슬라이드 루프
         spaceBetween: 10, // 슬라이드 사이의 간격
